@@ -1,7 +1,7 @@
 {
   "name": "FitText.js",
   "version": "1.2.0",
-  "main": "./jquery.fittext.js",
+  "main": "./mootools.fittext.js",
   "dependencies": {
     "jquery": ">= 1.6"
   }

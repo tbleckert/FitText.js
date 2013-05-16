@@ -1,14 +1,14 @@
-# FitText.js, a jQuery plugin for inflating web type
+# FitText.js, a <del>jQuery plugin</del> <ins>Mootools plugin</ins> for inflating web type
 FitText makes font-sizes flexible. Use this plugin on your responsive design for ratio-based resizing of your headlines.
 
 ## How it works
 Here is a simple FitText setup:
 
 ```html
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="jquery.fittext.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+<script src="mootools.fittext.js"></script>
 <script>
-  jQuery("#responsive_headline").fitText();
+  document.id('responsive_headline').fitText();
 </script>
 ```
 
@@ -18,8 +18,8 @@ Your text should now fluidly resize, by default: Font-size = 1/10th of the eleme
 If your text is resizing poorly, you'll want to turn tweak up/down "The Compressor". It works a little like a guitar amp. The default is `1`.
 
 ```javascript
-jQuery("#responsive_headline").fitText(1.2); // Turn the compressor up   (resizes more aggressively)
-jQuery("#responsive_headline").fitText(0.8); // Turn the compressor down (resizes less aggressively)
+document.id('responsive_headline').fitText(1.2); // Turn the compressor up   (resizes more aggressively)
+document.id('responsive_headline').fitText(0.8); // Turn the compressor down (resizes less aggressively)
 ```
 
 This will hopefully give you a level of "control" that might not be pixel perfect, but resizes smoothly & nicely.
@@ -28,7 +28,7 @@ This will hopefully give you a level of "control" that might not be pixel perfec
 FitText now allows you to specify two optional pixel values: `minFontSize` and `maxFontSize`. Great for situations when you want to preserve hierarchy.
 
 ```javascript
-jQuery("#responsive_headline").fitText(1.2, { minFontSize: '20px', maxFontSize: '40px' })
+document.id('responsive_headline').fitText(1.2, { minFontSize: '20px', maxFontSize: '40px' })
 ```
 
 ## CSS FAQ
@@ -39,10 +39,11 @@ jQuery("#responsive_headline").fitText(1.2, { minFontSize: '20px', maxFontSize: 
 - Set a No-JS fallback font-size in your CSS.
 - Fire
 
-## Don't use jQuery?
-That's okay. Check out these handy non-jQuery versions maintained by other people.
+## Don't use Mootools?
+That's okay. Check out these handy non-Mootools versions maintained by other people.
 
-- [non-jQuery FitText](https://github.com/adactio/FitText.js) from @adactio
+- [jQuery FitText](https://github.com/davatron5000/FitText.js) from @davatron5000
+- [vanilla JS FitText](https://github.com/adactio/FitText.js) from @adactio
 
 ## Changelog
 * `v 1.2` - Added `onorientationchange` event
